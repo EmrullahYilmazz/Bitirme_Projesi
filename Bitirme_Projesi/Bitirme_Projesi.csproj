@@ -67,17 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="Giriş.aspx" />
+    <Content Include="Kayıt.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Giriş.aspx.cs">
+      <DependentUpon>Giriş.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Giriş.aspx.designer.cs">
+      <DependentUpon>Giriş.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kayıt.aspx.cs">
+      <DependentUpon>Kayıt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kayıt.aspx.designer.cs">
+      <DependentUpon>Kayıt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
