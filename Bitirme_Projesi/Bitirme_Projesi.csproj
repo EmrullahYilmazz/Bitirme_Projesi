@@ -67,12 +67,70 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Create.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Giriş.aspx" />
     <Content Include="Kayıt.aspx" />
     <Content Include="style.css" />
+    <Content Include="template\about.html" />
+    <Content Include="template\contact.html" />
+    <Content Include="template\css\bootstrap.min.css" />
+    <Content Include="template\css\templatemo-xtra-blog.css" />
+    <Content Include="template\fontawesome\css\all.min.css" />
+    <Content Include="template\fontawesome\LICENSE.txt" />
+    <Content Include="template\fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="template\fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="template\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="template\img\about-01.jpg" />
+    <Content Include="template\img\about-02.jpg" />
+    <Content Include="template\img\about-03.jpg" />
+    <Content Include="template\img\about-04.jpg" />
+    <Content Include="template\img\about-05.jpg" />
+    <Content Include="template\img\comment-1.jpg" />
+    <Content Include="template\img\comment-2.jpg" />
+    <Content Include="template\img\img-01.jpg" />
+    <Content Include="template\img\img-02.jpg" />
+    <Content Include="template\img\img-03.jpg" />
+    <Content Include="template\img\img-04.jpg" />
+    <Content Include="template\img\img-05.jpg" />
+    <Content Include="template\img\img-06.jpg" />
+    <Content Include="template\index.html" />
+    <Content Include="template\js\jquery.min.js" />
+    <Content Include="template\js\templatemo-script.js" />
+    <Content Include="template\post.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Giriş.aspx.cs">
       <DependentUpon>Giriş.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,6 +149,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="template\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="template\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="template\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="template\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="template\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="template\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="template\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="template\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="template\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="template\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="template\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="template\fontawesome\webfonts\fa-solid-900.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
