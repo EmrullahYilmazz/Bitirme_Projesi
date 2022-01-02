@@ -52,15 +52,11 @@
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
           
             <label class="mdl-textfield__label" for="sample3">Şifre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </label>
-&nbsp;<asp:TextBox ID="TextBox2" runat="server" CssClass="mdl-textfield__label"></asp:TextBox>
+&nbsp;<asp:TextBox ID="TextBox2" runat="server" TextMode="Password" CssClass="mdl-textfield__label"></asp:TextBox>
             <br />
             <br />
             <br />
           
-          <span class="mdl-textfield__error"></span>
-
-             <span class="mdl-textfield__error">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-            &nbsp;<asp:TextBox ID="TextBox3" runat="server"  CssClass="mdl-textfield__label"></asp:TextBox>
             <br/><br />
            
            
@@ -73,7 +69,7 @@
     
      
     </div>
-      <asp:Button ID="Button1" runat="server" Text="Kayıt Ol" CssClass="sign-in-btn mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" />
+      <asp:Button ID="Button1" runat="server" Text="Kayıt Ol" CssClass="sign-in-btn mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored" OnClick="Button1_Click" />
  </div> <br />
         </div>
     </form>

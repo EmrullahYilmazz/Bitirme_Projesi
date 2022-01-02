@@ -22,6 +22,8 @@
             <div class="tm-site-header">
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
                 <h1 class="text-center">Cryptology Repository System</h1>
+                <br />
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             </div>
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
@@ -40,6 +42,11 @@
                     <li class="tm-nav-item"><a href="Contact.aspx" class="tm-nav-link">
                         <i class="far fa-comments"></i>
                         İletişim
+                    </a></li>
+                      </a></li>
+                     <li class="tm-nav-item"><a href="Giriş.aspx" class="tm-nav-link">
+                        
+                        Çıkış Yap
                     </a></li>
                 </ul>
             </nav>
