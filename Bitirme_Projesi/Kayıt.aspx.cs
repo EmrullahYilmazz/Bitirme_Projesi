@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Web.Configuration;
 using System.Configuration;
+
 namespace Bitirme_Projesi
 {
     public partial class Kayıt : System.Web.UI.Page

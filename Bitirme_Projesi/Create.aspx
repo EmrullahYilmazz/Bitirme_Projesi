@@ -78,9 +78,15 @@
 
                             <br />
                             <p class="tm-mb-40">Örnek</p>
-                            <p>
-                                
-                            </p>
+                            <br />
+                         
+                            <asp:TextBox ID="TextBox1" runat="server" Height="125px" Width="624px" TextMode="MultiLine" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
+                            <br />
+
+                            <asp:Button ID="Button1" runat="server" Text="Şifrele" OnClick="Button1_Click" />
+                            <br />
+                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+
                           
                         </div>
                         

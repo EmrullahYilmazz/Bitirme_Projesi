@@ -43,7 +43,10 @@ namespace Bitirme_Projesi
                 Label1.Text = "Hata! Kayıt Bulunamadı";
                 connect.Close();
             }
-            
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+
+
 
 
         }

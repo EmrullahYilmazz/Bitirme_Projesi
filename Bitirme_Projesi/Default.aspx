@@ -77,9 +77,38 @@
 
                             <br />
                             <p class="tm-mb-40">Örnek</p>
-                            <p>
+                            <br />
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Bitirme_ProjesiConnectionString %>" SelectCommand="SELECT * FROM [post]" DeleteCommand="DELETE FROM [post] WHERE [postid] = @postid" InsertCommand="INSERT INTO [post] ([hash], [kullaniciadi]) VALUES (@hash, @kullaniciadi)" UpdateCommand="UPDATE [post] SET [hash] = @hash, [kullaniciadi] = @kullaniciadi WHERE [postid] = @postid">
+                                <DeleteParameters>
+                                    <asp:Parameter Name="postid" Type="Int32" />
+                                </DeleteParameters>
+                                <InsertParameters>
+                                    <asp:Parameter Name="hash" Type="String" />
+                                    <asp:Parameter Name="kullaniciadi" Type="String" />
+                                </InsertParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="hash" Type="String" />
+                                    <asp:Parameter Name="kullaniciadi" Type="String" />
+                                    <asp:Parameter Name="postid" Type="Int32" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
+                            <br />
+                            <asp:GridView ID="GridView2" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="856px" OnRowDeleted="GridView2_RowDeleted" OnRowDeleting="GridView2_RowDeleting1" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
+                                <AlternatingRowStyle BackColor="White" />
+                                <EditRowStyle BackColor="#2461BF" />
+                                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                                <RowStyle BackColor="#EFF3FB" />
+                                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                                <SortedDescendingHeaderStyle BackColor="#4870BE" />
                                 
-                            </p>
+                            </asp:GridView>
+
+                            
                           
                         </div>
                         
