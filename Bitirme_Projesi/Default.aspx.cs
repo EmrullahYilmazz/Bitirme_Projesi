@@ -8,6 +8,9 @@ using System.Web.Configuration;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
+using System.Security.Cryptography;
+using System.Text;
+
 
 namespace Bitirme_Projesi
 {
@@ -16,6 +19,9 @@ namespace Bitirme_Projesi
         static string conString = ConfigurationManager.ConnectionStrings["Bitirme_ProjesiConnectionString"].ConnectionString;
         static SqlConnection connect = new SqlConnection(conString);
         static string kadi;
+        private string hash = "";
+        private string veri = "";
+        
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -53,6 +59,30 @@ namespace Bitirme_Projesi
         protected void GridView2_RowDeleting1(object sender, GridViewDeleteEventArgs e)
         {
             
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            veri = TextBox1.Text.ToString();
+            hash = TextBox2.Text.ToString();
+            try
+            {
+                byte[] data = Convert.FromBase64String(veri);
+                using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+                {
+                    byte[] keys = md5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
+                    using (TripleDESCryptoServiceProvider tripDes = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })
+                    {
+                        ICryptoTransform transform = tripDes.CreateDecryptor();
+                        byte[] results = transform.TransformFinalBlock(data, 0, data.Length);
+                        Label5.Text = UTF8Encoding.UTF8.GetString(results);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
         }
     }
 }

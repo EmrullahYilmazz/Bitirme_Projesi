@@ -19,7 +19,7 @@ namespace Bitirme_Projesi
         static string conString = ConfigurationManager.ConnectionStrings["Bitirme_ProjesiConnectionString"].ConnectionString;
         SqlConnection connect = new SqlConnection(conString);
 
-
+       
         protected void Page_Load(object sender, EventArgs e)
         {
 

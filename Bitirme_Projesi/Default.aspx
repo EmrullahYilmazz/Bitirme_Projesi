@@ -107,6 +107,16 @@
                                 <SortedDescendingHeaderStyle BackColor="#4870BE" />
                                 
                             </asp:GridView>
+                            <br />
+                            <asp:Label ID="Label2" runat="server" Text="Çözülmesini istediğiniz hash değerini girin"></asp:Label><a>----</a><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <br />
+                            <asp:Label ID="Label3" runat="server" Text="Çözülmesini istediğiniz hashin key değerini girin"></asp:Label><a>----</a><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            <br />
+                            <asp:Button ID="Button1" runat="server" Text="HASH ÇÖZ" OnClick="Button1_Click"/>
+                            <br />
+                            <asp:Label ID="Label4" runat="server" Text=""></asp:Label>
+                            <br />
+                            ÇÖZÜLMÜŞ ŞİFRENİZ=><asp:Label ID="Label5" runat="server" Text=""></asp:Label>
 
                             
                           

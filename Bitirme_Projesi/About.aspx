@@ -77,10 +77,16 @@
                     <div class="mb-4">
                         <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">Sistemin İşleyişi Hakkında</h2>
                         <p>
-                            Örnek Yazı
+                            Sistem, kendiniz dışında başka hiç kimsenin bilmesini istemediğiniz verileri saklamanıza olanak sağlar.
                         </p>
                         <p>
-                            Örnek Yazı2
+                            İçerik Gönder kısmından verilerinizi şifreleyin ve size verilen hash key değerini bir yere not edin.
+                            <br />
+                            Hash değeri olmazsa veriler geri döndürülemez şekilde kaybedilir.
+                            <br />
+                            Ana Sayfada görülen veritabanı sadece size aittir. Veritabanında sizin şifrelediğiniz her hash için ayrı bir satır yaratılacaktır.
+                            <br />
+                            Orada mevcut olan hash değerini kopyalayıp istenilen yere yapıştırın sonrasında istenilen yere size kayıt esnasında verilen hash keyi girin.
                         </p>                            
                     </div>                    
                 </div>
@@ -93,7 +99,7 @@
                         </div>                        
                         <h2 class="mb-3 tm-color-primary tm-post-title">Arkaplan</h2>
                         <p class="mb-0 tm-line-height-short">
-                            Arkaplan Hakkında Bilgi
+                            Arkaplanda şifrele butonuna bastığınız an veriniz, MD-5 Algoritması ve özel oluşturulmuş hash key generator ile birleştirilerek şifrelenir.
                         </p>
                     </div>
                 </div>
@@ -104,7 +110,7 @@
                         </div>                        
                         <h2 class="mb-3 tm-color-primary tm-post-title">İşlevsellik</h2>
                         <p class="mb-0 tm-line-height-short">
-                            İşlevsellik Hakkında Bilgi
+                            Sadece bir butona basarak verinizi hızlıca şifreleyin!
                         </p>
                     </div>
                 </div>
@@ -115,7 +121,7 @@
                         </div>                        
                         <h2 class="mb-3 tm-color-primary tm-post-title">Güvenlik ve Saldırı Önleme</h2>
                         <p class="mb-0 tm-line-height-short">
-                             Bilgi
+                             Sisteme kaydetmiş olduğunuz veri hash key değeri olmadan çözülmez. Herkes kendi verisi dışındaki verileri göremez. Hash ve hash key değeri MSSQL veritabanında saklıdır ve yetkisiz erişime kapalıdır.
                         </p>
                     </div>
                 </div>
