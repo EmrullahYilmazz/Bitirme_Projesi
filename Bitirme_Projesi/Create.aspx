@@ -85,9 +85,10 @@
 
                             <asp:Button ID="Button1" runat="server" Text="Şifrele" OnClick="Button1_Click" />
                             <br />
-                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-                            <br />
-                            <asp:Label ID="Label3" runat="server" Text="HASH KEY DEĞERİNİZ=123 LÜTFEN KİMSEYLE PAYLAŞMAYIN"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+                            <br />LUTFEN KEY DEGERINIZI NOT EDIN :
+                            <asp:Label ID="Label3" runat="server" Text=""></asp:Label><br />LUTFEN YUKARIDA YAZILAN KEY DEGERINI GIRIN :
+                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 
                           
                         </div>

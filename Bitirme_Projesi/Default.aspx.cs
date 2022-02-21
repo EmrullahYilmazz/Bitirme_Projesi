@@ -23,6 +23,7 @@ namespace Bitirme_Projesi
         private string veri = "";
         
         
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             connect.Open();
@@ -65,6 +66,7 @@ namespace Bitirme_Projesi
         {
             veri = TextBox1.Text.ToString();
             hash = TextBox2.Text.ToString();
+            TextBox1.Text.ToLower();
             try
             {
                 byte[] data = Convert.FromBase64String(veri);
@@ -79,10 +81,15 @@ namespace Bitirme_Projesi
                     }
                 }
             }
-            catch
+            catch (Exception hata)
             {
+                //Label4.Text = ("Hata Meydana Geldi");
+                Label4.Text = ("Hata Meydana Geldi" + hata);
 
+                connect.Close();
             }
+            TextBox1.Text = "";
+            TextBox2.Text = "";
         }
     }
 }
